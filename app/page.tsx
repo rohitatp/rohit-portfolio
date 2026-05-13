@@ -165,7 +165,7 @@ const portfolioData = {
   ],
 };
 
-function SectionLabel({ children }) {
+function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
     <div className="uppercase tracking-[0.3em] text-xs text-neutral-500 mb-8">
       {children}
@@ -173,7 +173,7 @@ function SectionLabel({ children }) {
   );
 }
 
-function Chip({ children }) {
+function Chip({ children }: { children: React.ReactNode }) {
   return (
     <div className="border border-neutral-300 rounded-full px-4 py-2 text-sm text-neutral-700">
       {children}
