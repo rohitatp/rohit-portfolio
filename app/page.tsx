@@ -197,7 +197,7 @@ function FlagshipCard({ project }: any) {
       </p>
 
       <div className="flex flex-wrap gap-3">
-        {project.highlights.map((item) => (
+        {project.highlights.map((item: any) => (
           <Chip key={item}>{item}</Chip>
         ))}
       </div>
@@ -225,7 +225,7 @@ function ProjectCard({ project }: any) {
           </p>
 
           <div className="flex flex-wrap gap-3 mt-6">
-            {project.technologies.map((tech) => (
+            {project.technologies.map((tech: any) => (
               <Chip key={tech}>{tech}</Chip>
             ))}
           </div>
@@ -331,7 +331,7 @@ export default function PortfolioWebsite() {
           </p>
 
           <div className="mt-16 grid md:grid-cols-2 xl:grid-cols-4 gap-5">
-            {metrics.map((metric) => (
+            {metrics.map((metric: any) => (
               <MetricCard key={metric.label} metric={metric} />
             ))}
           </div>
@@ -350,7 +350,7 @@ export default function PortfolioWebsite() {
             <SectionLabel>Research Areas</SectionLabel>
 
             <div className="flex flex-wrap gap-3 max-w-xl">
-              {researchAreas.map((area) => (
+              {researchAreas.map((area: any) => (
                 <Chip key={area}>{area}</Chip>
               ))}
             </div>
@@ -362,7 +362,7 @@ export default function PortfolioWebsite() {
         <SectionLabel>Selected Systems & Infrastructure Work</SectionLabel>
 
         <div className="space-y-8">
-          {flagshipProjects.map((project) => (
+          {flagshipProjects.map((project: any) => (
             <FlagshipCard key={project.id} project={project} />
           ))}
         </div>
@@ -372,7 +372,7 @@ export default function PortfolioWebsite() {
         <SectionLabel>Patents & Publications</SectionLabel>
 
         <div className="mb-24">
-          {patents.map((patent) => (
+          {patents.map((patent: any) => (
             <PatentCard key={patent.id} patent={patent} />
           ))}
         </div>
