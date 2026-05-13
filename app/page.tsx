@@ -181,7 +181,7 @@ function Chip({ children }: { children: React.ReactNode }) {
   );
 }
 
-function FlagshipCard({ project }) {
+function FlagshipCard({ project }: any) {
   return (
     <div className="border border-neutral-300 rounded-[32px] p-10 lg:p-14 bg-white hover:bg-neutral-50 shadow-sm transition duration-500">
       <div className="text-sm uppercase tracking-[0.2em] text-neutral-500 mb-6">
@@ -205,7 +205,7 @@ function FlagshipCard({ project }) {
   );
 }
 
-function ProjectCard({ project }) {
+function ProjectCard({ project }: any) {
   return (
     <div className="border-t border-neutral-300 py-10 group transition">
       <div className="grid lg:grid-cols-[220px_1fr] gap-8">
@@ -235,7 +235,7 @@ function ProjectCard({ project }) {
   );
 }
 
-function PatentCard({ patent }) {
+function PatentCard({ patent }: any) {
   return (
     <a
       href={patent.link}
@@ -260,7 +260,7 @@ function PatentCard({ patent }) {
   );
 }
 
-function MetricCard({ metric }) {
+function MetricCard({ metric }: any) {
   return (
     <div className="border border-neutral-300 rounded-[28px] p-8 bg-white shadow-sm min-h-[260px] flex flex-col justify-between overflow-hidden">
       <div className="text-5xl md:text-6xl font-medium tracking-tight leading-[0.95]">
@@ -274,7 +274,7 @@ function MetricCard({ metric }) {
   );
 }
 
-function ExperienceRow({ item }) {
+function ExperienceRow({ item }: any) {
   return (
     <div className="border-t border-neutral-300 py-10">
       <div className="grid lg:grid-cols-[260px_1fr] gap-8">
